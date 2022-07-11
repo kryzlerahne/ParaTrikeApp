@@ -1,27 +1,43 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-content {
+    --background: url('../../assets/homebg.png') no-repeat center center/cover;
+    ion-grid{
+      transform: translateY(52vh);
+      ion-label, p {
+        font-size: 1.5rem;
+        color:#212121;
+        font-weight: bold;
+        font-family: Montserrat;
+        display: block;
+        text-align: center;
+        letter-spacing: -1.4px;
+      }
+    }
+    ion-button{
+      --background: #272727;
+      --border-radius: 24px;
+      --ion-font-family: 'Montserrat';
+      font-weight: 7;
+      text-transform: none;
+      width: 80%;
+      height: 6%;
+      margin-left: 10vw;
+      margin-top: 5vh;
+    }
+}
+.vertical-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 62vh;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.p1, .a1{
+  text-align:center;
+  display:inline;
+  font-family: 'Montserrat';
+  font-size: 14px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+.signInText{
+  margin-left:18vw;
 }
