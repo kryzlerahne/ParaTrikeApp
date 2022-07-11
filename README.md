@@ -13,6 +13,8 @@
 
 <h3> Sustainable Development Goals (SDGs) </h3> <i class="fa-solid fa-1"></i>
 
+<p align="justify"> The SDGs which this project aims to attain are Decent Work and Economic Growth, as well as to achieve Sustainable Cities and Communities. These SDGs are further described as follows: </p>
+
 <h1 align="center"> 
 
 <h3> Problem Statement </h3> <i class="fa-solid fa-1"></i>
