@@ -1,4 +1,5 @@
-![ParaTrike header](https://user-images.githubusercontent.com/74886614/178195412-e899f875-0769-435e-a422-65c66396cced.png)
+![header](https://user-images.githubusercontent.com/74886614/178195972-edd6ebca-f5d2-4085-8130-824f38d45083.png)
+
 <h1 align="center"> ParaTrike: A Mobile-Based Application for Tricycle Booking </h1>
 
 <h3> Introduction </h3> <i class="fa-solid fa-1"></i>
