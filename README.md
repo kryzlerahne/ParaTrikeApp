@@ -11,6 +11,12 @@
 
 <h1 align="center"> 
 
+<h3> Purpose and Description </h3> <i class="fa-solid fa-1"></i>
+
+<p align="jusify"> Para Trike is a mobile-based application that allows its end-users to easily book tricycles within their 500m radius. They would be able to book their ride depending on their chosen location and available driver during that time. Upon booking, the estimated time of arrival, fare price, mode of payment, and driver’s information will then be displayed. Commuters are allowed to cancel their booking. </p>
+
+<h1 align="center"> 
+
 <h3> Sustainable Development Goals (SDGs) </h3> <i class="fa-solid fa-1"></i>
 
 <p align="justify"> The SDGs which this project aims to attain are Decent Work and Economic Growth, as well as to achieve Sustainable Cities and Communities. These SDGs are further described as follows: </p>
@@ -21,6 +27,11 @@
 
 <h1 align="center"> 
 
+<h3> Objectives </h3> <i class="fa-solid fa-1"></i>
+
+<h1 align="center"> 
+
 <h3> Significance of the Project </h3> <i class="fa-solid fa-1"></i>
 
 <h1 align="center"> 
+
