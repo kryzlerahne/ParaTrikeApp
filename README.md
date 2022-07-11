@@ -28,6 +28,8 @@
 <h1 align="center"> 
 
 <h3> Objectives </h3> <i class="fa-solid fa-1"></i>
+  
+<p align="justify"> The main objective of this study is to develop ParaTrike, a mobile-based application created using the technology HTML, CSS, and JavaScript with the utilization of Ionic and Angular Frameworks. This application will be utilized for a modernized booking system for the passenger's end. </p>
 
 <h1 align="center"> 
 
