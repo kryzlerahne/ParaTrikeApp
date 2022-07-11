@@ -26,10 +26,6 @@
 
 <h1 align="center"> 
 
-<h3> Problem Statement </h3> <i class="fa-solid fa-1"></i>
-
-<h1 align="center"> 
-
 <h3> Objective </h3> <i class="fa-solid fa-1"></i>
   
 <p align="justify"> The main objective of this study is to develop ParaTrike, a mobile-based application and innovative platform for faster booking of tricycles as a means of transportation in the community which will be created using the technology HTML, CSS, and JavaScript with the utilization of Ionic and Angular Frameworks. This application will be utilized for an automated and modernized booking system for the passenger's end. </p>
