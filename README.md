@@ -23,6 +23,17 @@
 <h3> Sustainable Development Goals (SDGs) </h3> <i class="fa-solid fa-1"></i>
 
 <p align="justify"> The SDGs which this project aims to attain are Decent Work and Economic Growth, as well as to achieve Sustainable Cities and Communities. These SDGs are further described as follows: </p>
+  
+<h3 align=center><b>Goal 8: Decent Work and Economic Growth</b></h3>
+  
+![sdg8.2](https://user-images.githubusercontent.com/74886614/178325903-3b9af0d6-3807-4621-8f42-553f1fdccf83.png)
+  
+![sdg8.8](https://user-images.githubusercontent.com/74886614/178325922-ac091cf7-03f3-4a2c-b37f-e31404a3c261.png)
+
+<h3 align=center><b>Goal 11: Sustainable Cities and Communities </b></h3>
+  
+![sdg11.2](https://user-images.githubusercontent.com/74886614/178329539-1d5e17a7-cc9c-4778-813b-95bd602a12e4.png)
+
 
 <h1 align="center"> 
 
