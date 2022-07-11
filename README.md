@@ -1,4 +1,4 @@
-# ParaTrike: A Mobile-Based Application for Tricycle Booking
+<h1 align="center"> ParaTrike: A Mobile-Based Application for Tricycle Booking </h1>
 
 <h3> Introduction </h3> <i class="fa-solid fa-1"></i>
 
