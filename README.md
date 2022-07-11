@@ -32,6 +32,10 @@
 <h1 align="center"> 
 
 <h3> Significance of the Project </h3> <i class="fa-solid fa-1"></i>
+  
+<p align="justify"> <strong>Community</strong> - This application benefits the community by improving the traditional method of booking rides in the area. A more efficient and modernized way will be used by the community and its people for their bookings, allowing for a more secure and safe travel experience. </p>
+
+<p align="justify"> <strong>Passengers</strong> - The outcome of the project would provide passengers especially people who regularly rides tricycles for transportation, an easy way to find and book tricycles to bring them to their destination. The app also provides flexibility and security to passengers as it provides various payment methods and provides them with the tricycle driver's personal information. </p>
 
 <h1 align="center"> 
 
