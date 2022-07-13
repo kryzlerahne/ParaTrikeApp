@@ -10,10 +10,26 @@
     <p id="subtitle"> Book your next tricycle in just one tap. </p>
 
     <ion-item class="mobileInput">
-      <ion-label position="fixed" id="mobileFixed"> +639 </ion-label>
+      <ion-label position="fixed" id="mobileFixed"> +639 </ion-label> <!--Fix Space after 9-->
       <!--<ion-icon name="chevron-down-outline"></ion-icon>-->
       <ion-input placeholder="998 029 5159" type="tel" minlength="10" maxlength="10"></ion-input>
     </ion-item>
 
+<ion-button (click)="register()"> Sign up with Phone </ion-button>
+<p class="p1" (click)="signIn()"> <u>I have an account already </u></p>
+<p class="p2"> Or sign up using: </p>
+
+<!--Add Links to Social Media-->
+<div class="socials">
+  <div class="inline-block">
+      <ion-img src="../../assets/google.png"></ion-img>
+  </div>
+  <div class="inline-block">
+    <ion-img src="../../assets/twitter.png"></ion-img>
+  </div>
+  <div class="inline-block">
+    <ion-img src="../../assets/fb.png"></ion-img>
+  </div>
+</div>
 
 </ion-content>

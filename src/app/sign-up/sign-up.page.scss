@@ -7,6 +7,17 @@ ion-content {
     ion-label, ion-input{
       font-family: Montserrat;
     }
+    ion-button{
+      --background: #272727;
+      --border-radius: 24px;
+      --ion-font-family: 'Montserrat';
+      font-weight: 10;
+      text-transform: none;
+      width: 91%;
+      height: 6%;
+      margin-left: 4vw;
+      margin-top: -4vh;
+    }
 }
 
 #signUpLabel {
@@ -46,4 +57,21 @@ ion-content {
   margin: auto;
   transform: translateY(-5vh);
   display: block;
+}
+
+.p1, .p2{
+  text-align:center;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.p2{
+  transform: translateY(4vh);
+}
+.inline-block{
+  width:32%;
+  display: inline-block;
+  white-space:nowrap;
+  transform: translateY(4vh);
 }
