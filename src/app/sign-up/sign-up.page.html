@@ -1,10 +1,19 @@
 <ion-content [fullscreen]="true">
-  <ion-grid>
-    <ion-label color="white" class="ion-margin on-padding start">
-    #1 Mobile-based app for
-    <p>
-      <ion-text  class="ion-margin on-padding start"> tricycle booking </ion-text>
-    </p>
-    </ion-label>
-  </ion-grid>
+
+  <div class="vertical-center">
+    <div class="center">
+      <ion-img src="../../assets/signupIcon.png" alt="signUpIcon" align="right" id="signupIcon"></ion-img>
+    </div>
+  </div>
+
+    <ion-label color="white" class="ion-margin on-padding start" id="signUpLabel"> Sign Up to ParaTrike </ion-label>
+    <p id="subtitle"> Book your next tricycle in just one tap. </p>
+
+    <ion-item class="mobileInput">
+      <ion-label position="fixed" id="mobileFixed"> +639 </ion-label>
+      <!--<ion-icon name="chevron-down-outline"></ion-icon>-->
+      <ion-input placeholder="998 029 5159" type="tel" minlength="10" maxlength="10"></ion-input>
+    </ion-item>
+
+
 </ion-content>

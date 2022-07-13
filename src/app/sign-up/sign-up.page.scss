@@ -1,6 +1,49 @@
 ion-content {
     --background: url('../../assets/signupBg.png') no-repeat center center/cover;
-    ion-grid{
-      transform: translateY(52vh);
+    ion-item{
+      border-radius: 30px;
+      width: 330px;
     }
+    ion-label, ion-input{
+      font-family: Montserrat;
+    }
+}
+
+#signUpLabel {
+  font-size: 1.5rem;
+  color:#212121;
+  font-weight: bold;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  letter-spacing: -1.4px;
+  transform: translateY(-6vh);
+}
+
+
+#signupIcon{
+  width:200px;
+}
+
+.vertical-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 49vh;
+}
+
+#subtitle {
+  font-size: 12px;
+  color:#212121;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  letter-spacing: -0.2px;
+  transform: translateY(-8vh);
+}
+
+.mobileInput{
+  margin: auto;
+  transform: translateY(-5vh);
+  display: block;
 }
