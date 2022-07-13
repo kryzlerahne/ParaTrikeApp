@@ -1,0 +1,77 @@
+ion-content {
+    --background: url('../../assets/signInBg.png') no-repeat center center/cover;
+    ion-item{
+      border-radius: 10px;
+      width: 310px;
+    }
+    ion-input{
+      font-family: Montserrat;
+      font-size: 13px;
+    }
+    ion-button{
+      --background: #FFBA4C;
+      --border-radius: 24px;
+      --ion-font-family: 'Montserrat';
+      font-weight: 50;
+      text-transform: none;
+      width: 84%;
+      height: 6%;
+      margin-left: 8vw;
+      margin-top: -1vh;
+    }
+}
+
+#signInIcon{
+  width:240px;
+}
+
+.vertical-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+#signInLabel{
+  font-size: 1.5rem;
+  color:#212121;
+  font-weight: bold;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  letter-spacing: -1.4px;
+  transform: translateY(-6vh);
+}
+
+#subtitle {
+  font-size: 14px;
+  color:#212121;
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  letter-spacing: -0.2px;
+  transform: translateY(-8vh);
+}
+
+.credentials{
+  margin: auto;
+  transform: translateY(-5vh);
+  display: block;
+}
+
+.credentialPass{
+  margin: auto;
+  transform: translateY(-4vh);
+  display: block;
+}
+
+.p1, .a1{
+  text-align:center;
+  display:inline;
+  font-family: 'Montserrat';
+  font-size: 14px;
+}
+
+.forgotPass{
+  margin-left:18vw;
+}

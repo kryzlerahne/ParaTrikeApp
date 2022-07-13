@@ -1,9 +1,25 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
 
-<ion-content>
+  <div class="vertical-center">
+    <div class="center">
+      <ion-img src="../../assets/signInIcon.png" alt="signInIcon" align="right" id="signInIcon"></ion-img>
+    </div>
+  </div>
 
+    <ion-label color="white" class="ion-margin on-padding start" id="signInLabel"> Sign In to your Account </ion-label>
+    <p id="subtitle"> Welcome Back! Ready for your next ride? </p>
+
+    <ion-item class="credentials">
+      <ion-input placeholder="Username or Mobile Number" ></ion-input>
+    </ion-item>
+
+    <ion-item class="credentialPass">
+      <ion-input placeholder="Password" type="password" ></ion-input>
+    </ion-item>
+
+    <ion-button (click)="login()"> Login </ion-button>
+    <div class="forgotPass">
+      <p class="p1">Forgot Password? </p>
+    <p class="a1" (click)="forgotPassword()"> <b><u> Click Here </u></b></p> <!-- Add Routes-->
+    </div>
 </ion-content>
