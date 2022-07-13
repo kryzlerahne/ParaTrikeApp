@@ -14,7 +14,15 @@ export class LoginPage implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  register() {
+    this.router.navigate(['/sign-up']);
+  }
+
   ngOnInit() {
   }
+
+  //changeEye() {
+  //  this.type = !this.type;
+  //}
 
 }

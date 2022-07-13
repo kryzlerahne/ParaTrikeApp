@@ -14,12 +14,21 @@
     </ion-item>
 
     <ion-item class="credentialPass">
-      <ion-input placeholder="Password" type="password" ></ion-input>
+      <!--<ion-icon [name]="type ? 'eye-outline' : 'eye-off-outline'" (click)="changeEye()" Guide Video Timestamp: 10:38
+      slot="end" color="medium"></ion-icon>
+      <ion-input placeholder="Password" [type]="type ? 'password' : 'text'"></ion-input>-->
+      <ion-input placeholder="Password" type="password"></ion-input>
+      <ion-icon name="eye-outline"></ion-icon>
     </ion-item>
 
-    <ion-button (click)="login()"> Login </ion-button>
+    <ion-button (click)="login()"> Login </ion-button>  <!-- Add Routes-->
     <div class="forgotPass">
       <p class="p1">Forgot Password? </p>
     <p class="a1" (click)="forgotPassword()"> <b><u> Click Here </u></b></p> <!-- Add Routes-->
+    </div>
+
+    <div class="noAcc">
+      <p class="p2">Don't have an account yet? </p>
+    <p class="a2" (click)="register()"> <b><u> Register </u></b></p>
     </div>
 </ion-content>
