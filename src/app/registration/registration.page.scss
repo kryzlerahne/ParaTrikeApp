@@ -1,0 +1,65 @@
+ion-content{
+    --background: url('../../assets/bg-reg.png') no-repeat center center/cover;
+  font-family: Montserrat Medium;
+
+}
+ion-item{
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+ion-button{
+  --background: #272727;
+  --border-radius: 24px;
+  --ion-font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: none;
+  width: 215px;
+  height: 45px;
+  padding-top: 20px;
+
+}
+ion-label{
+  font-size: 24px;
+  font-weight: bold;
+  padding-top:15px;
+  padding-bottom:10px;
+}
+ion-icon{
+   font-size: 35px;
+   padding-left: 10px;
+   vertical-align: middle;
+   margin-top: -12px;
+}
+ion-input{
+  height:46px;
+
+}
+
+          #acIconCase{
+            position: absolute ;
+          }
+
+
+          #acIcon{
+            width:40px;
+            margin-left: 200px;
+            margin-top: -34px;
+            vertical-align: middle;
+          }
+
+          .line1{
+            padding-top: 40px;
+            padding-bottom: 15px;
+          }
+          .line2{
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+          .adjust1{
+            padding-bottom: 150px;
+          }
+          .headings{
+            margin-top: 50px;
+          }
