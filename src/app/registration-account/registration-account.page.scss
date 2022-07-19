@@ -1,0 +1,77 @@
+ion-content{
+    --background: url('../../assets/reg2bg.png') no-repeat center center/cover;
+  font-family: Montserrat Medium;
+}
+ion-item{
+  border-radius: 60px;
+  padding: 5px;
+}
+
+ion-button{
+  --background: #272727;
+  --border-radius: 24px;
+  --ion-font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: none;
+  width: 220px;
+  height: 60px;
+  padding-top: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 14px;
+}
+ion-label{
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -1.4px;
+}
+ion-icon{
+   font-size: 35px;
+   padding-left: 10px;
+   vertical-align: middle;
+   margin-top: -12px;
+}
+ion-input{
+  height:46px;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+.line1{
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+.line2{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.adjust1{
+  padding-bottom: 150px;
+}
+.headings{
+  display:inline-block;
+  margin-top: 15px;
+}
+.contactHeading{
+  display:inline-block;
+  margin-top: 35px;
+}
+#arrow{
+  margin-top: 1px;
+  width:25px;
+}
+
+.ellipse{
+  color:white;
+  width:12px;
+  margin-top: 308px;
+}
+
+#acIconCase{
+  position: absolute ;
+}
+#acIcon{
+  width:40px;
+  margin-left: 170px;
+  margin-top: -34px;
+  vertical-align: middle;
+}
