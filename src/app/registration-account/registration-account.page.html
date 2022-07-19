@@ -1,0 +1,32 @@
+<ion-content  [fullscreen]="true">
+
+  <div class="reg-form ion-padding">
+          <div class="form-input">
+
+              <ion-label class="headings">Account Details</ion-label>
+                <ion-img src="../../assets/accountD.png" align="top" id="acIcon"></ion-img>
+                <ion-img src="../../assets/Line.png" alt="line" align="right" class="line2"></ion-img>
+              <ion-item>
+                <ion-input type="text" placeholder="Username"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input type="text" placeholder="Password"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input type="text" placeholder="Retype Password" class="adjust1"></ion-input>
+              </ion-item>
+
+              <center>
+                <ion-button (click)="next()"> Submit </ion-button>
+              </center>
+          </div>
+      </div>
+
+      <center>
+      <ion-grid class="nextIcon">
+        <ion-icon name="ellipse-outline" class="ellipse"></ion-icon>
+        <ion-icon name="ellipse" class="ellipse"></ion-icon>
+      </ion-grid>
+      </center>
+
+</ion-content>
