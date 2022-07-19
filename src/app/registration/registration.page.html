@@ -16,7 +16,7 @@
                 <ion-input type="text" placeholder="Referral Code" class="adjust1"></ion-input>
               </ion-item>
 
-              <div id="acIconCase">
+            <!--  <div id="acIconCase">
                 <ion-label>Account Details</ion-label>
                 <ion-img src="../../assets/accountD.png" align="top" id="acIcon"></ion-img>
               </div>
@@ -32,9 +32,9 @@
                   </ion-item>
                   <ion-item>
                     <ion-input type="password" placeholder="Re-type Password" class="adjust1"></ion-input>
-                  </ion-item>
+                  </ion-item> -->
 
-              <ion-label>Contact Details</ion-label>
+              <ion-label class="contactHeading">Contact Details</ion-label>
               <ion-icon name="mail-outline"></ion-icon>
               <ion-img src="../../assets/Line.png" alt="line" align="right" class="line2"></ion-img>
               <ion-item>
@@ -44,9 +44,8 @@
                 <ion-input type="tel" placeholder="Mobile Number"></ion-input>
               </ion-item>
               <center>
-                <ion-button (click)="register()"> Submit </ion-button>
+                <ion-button (click)="next()"> Next <ion-icon name="arrow-forward-outline" id="arrow"></ion-icon> </ion-button>
               </center>
-
 
           </div>
       </div>
