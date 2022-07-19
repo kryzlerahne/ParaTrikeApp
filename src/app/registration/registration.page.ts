@@ -17,4 +17,8 @@ export class RegistrationPage implements OnInit {
   this.router.navigate(['/home']);
 }
 
+  next(){
+    this.router.navigate(['/registration-account']);
+  }
+
 }
