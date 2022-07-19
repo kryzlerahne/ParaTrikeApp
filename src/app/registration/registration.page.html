@@ -1,0 +1,53 @@
+<ion-content [fullscreen]="true">
+
+  <div class="reg-form ion-padding">
+          <div class="form-input">
+
+              <ion-label class="headings">Personal Details</ion-label>
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <ion-img src="../../assets/Line.png" alt="line" align="right" class="line2"></ion-img>
+              <ion-item>
+                <ion-input type="text" placeholder="First Name"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input type="text" placeholder="Last Name"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input type="text" placeholder="Referral Code" class="adjust1"></ion-input>
+              </ion-item>
+
+              <div id="acIconCase">
+                <ion-label>Account Details</ion-label>
+                <ion-img src="../../assets/accountD.png" align="top" id="acIcon"></ion-img>
+              </div>
+
+              <div class="line1">
+                <ion-img src="../../assets/Line.png"></ion-img>
+              </div>
+                  <ion-item>
+                    <ion-input type="text" placeholder="Username"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-input type="password" placeholder="Password"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-input type="password" placeholder="Re-type Password" class="adjust1"></ion-input>
+                  </ion-item>
+
+              <ion-label>Contact Details</ion-label>
+              <ion-icon name="mail-outline"></ion-icon>
+              <ion-img src="../../assets/Line.png" alt="line" align="right" class="line2"></ion-img>
+              <ion-item>
+                <ion-input type="email" placeholder="Email Address"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input type="tel" placeholder="Mobile Number"></ion-input>
+              </ion-item>
+              <center>
+                <ion-button (click)="register()"> Submit </ion-button>
+              </center>
+
+
+          </div>
+      </div>
+</ion-content>
