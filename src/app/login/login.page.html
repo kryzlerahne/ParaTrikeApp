@@ -9,17 +9,49 @@
     <ion-label color="white" class="ion-margin on-padding start" id="signInLabel"> Sign In to your Account </ion-label>
     <p id="subtitle"> Welcome Back! Ready for your next ride? </p>
 
+  <form [formGroup]="form">
     <ion-item class="credentials">
-      <ion-input placeholder="Username or Mobile Number" ></ion-input>
+      <ion-input
+      formControlName="phone"
+      placeholder="Username or Mobile Number"
+      type="tel"
+      minlength="11"
+      maxlengh="11">
+      </ion-input>
     </ion-item>
 
+    <!--Form Validation-->
+    <ion-text *ngIf="!form.get('phone').valid && form.get('phone').touched">
+      <ion-text class="error" *ngIf="form.get('phone').hasError('required')" color="danger">
+        * Please enter your mobile number.
+      </ion-text>
+      <ion-text class="error" *ngIf="form.get('phone').hasError('minlength') &&
+      !form.get('phone').hasError('required')" color="danger">
+      * Please enter a valid mobile number.
+      </ion-text>
+    </ion-text>
+
     <ion-item class="credentialPass">
-      <!--<ion-icon [name]="type ? 'eye-outline' : 'eye-off-outline'" (click)="changeEye()" Guide Video Timestamp: 10:38
+      <ion-icon [name]="type ? 'eye-outline' : 'eye-off-outline'" (click)="changeEye()"
       slot="end" color="medium"></ion-icon>
-      <ion-input placeholder="Password" [type]="type ? 'password' : 'text'"></ion-input>-->
-      <ion-input placeholder="Password" type="password"></ion-input>
-      <ion-icon name="eye-outline"></ion-icon>
+      <ion-input
+      formControlName="password"
+      placeholder="Password"
+      [type]="type ? 'password' : 'text'"></ion-input>
     </ion-item>
+
+    <!--Form Validation-->
+    <ion-text *ngIf="!form.get('password').valid && form.get('password').touched">
+      <ion-text class="errorPw" *ngIf="form.get('password').hasError('required')" color="danger">
+        * Please enter your password.
+      </ion-text>
+      <ion-text class="errorPw" *ngIf="form.get('password').hasError('minlength') &&
+      !form.get('password').hasError('required')" color="danger">
+      * Password must be of 8 minimum characters long.
+      </ion-text>
+    </ion-text>
+
+  </form>
 
     <ion-button (click)="login()"> Login </ion-button>  <!-- Add Routes-->
     <div class="forgotPass">

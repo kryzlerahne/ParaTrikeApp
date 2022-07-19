@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,6 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+
+  form: FormGroup
+  type: boolean = true;
 
   constructor(private router: Router) { }
 
@@ -19,10 +23,18 @@ export class LoginPage implements OnInit {
   }
 
   ngOnInit() {
+    this.form = new FormGroup({
+      phone: new FormControl(null, {
+        validators: [Validators.required, Validators.minLength(11), Validators.maxLength(11)]
+      }),
+      password: new FormControl(null, {
+        validators: [Validators.required, Validators.minLength(8)]
+      }),
+    });
   }
 
-  //changeEye() {
-  //  this.type = !this.type;
-  //}
+  changeEye() {
+    this.type = !this.type;
+  }
 
 }
