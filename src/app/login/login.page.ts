@@ -22,6 +22,18 @@ export class LoginPage implements OnInit {
     this.router.navigate(['/sign-up']);
   }
 
+  login(){
+    if(!this.form.valid){
+      this.form.markAllAsTouched();
+      return;
+    }
+    console.log(this.form.value);
+  }
+
+  forgotPassword(){
+    console.log('forgot');
+  }
+
   ngOnInit() {
     this.form = new FormGroup({
       phone: new FormControl(null, {
