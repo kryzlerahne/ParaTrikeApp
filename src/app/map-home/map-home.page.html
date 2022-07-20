@@ -1,4 +1,41 @@
 <ion-header translucent="true">
+<ion-toolbar color="danger">
+  <ion-title>Map Direction</ion-title>
+  <ion-buttons slot="start">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+<div #mapElement class="map"></div>
+
+<ion-content class="cardContainer">
+  <div class="card">
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>Hello, Kryzle!</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+    <br>
+    <ion-card-subtitle>Where are you heading to?</ion-card-subtitle>
+    <br>
+     <ion-input placeholder="Your Location"></ion-input>
+     <ion-input placeholder="Search your Destination"></ion-input><br>
+
+    <div class="buttonAlign">
+      <ion-button color="success">Continue</ion-button><ion-button color="danger">Cancel</ion-button>
+    </div>
+
+    </ion-card-content>
+  </ion-card>
+  </div>
+
+  </ion-content>
+
+
+<!--
+  <ion-header translucent="true">
   <ion-toolbar color="danger">
     <ion-title>Map Direction</ion-title>
     <ion-buttons slot="start">
@@ -20,3 +57,4 @@
 <div #mapElement class="map"></div>
 
 </ion-content>
+-->
