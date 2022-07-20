@@ -1,23 +1,46 @@
 .container {
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 
 capacitor-google-map {
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 
 ion-card-title {
   text-align: center;
-  color:white;
+  color: #EDEEFF;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 11px;
+  letter-spacing: -0.05em;
+  height: 10px;
+}
+
+ion-title{
+  left:30px;
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.05em;
 }
 
 ion-card-subtitle {
   text-align: center;
-  font-size: large;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.07em;
   color: #212121;
 }
 
@@ -32,12 +55,28 @@ ion-card-content{
   background-color: #EBE5D8;
 }
 
-ion-input {
-  background-color: white;
+.destination, .location{
+background-color: white;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 16px;
+border-radius: 10px;
+height: 100%;
+}
+
+.location{
+  margin-top: 23px;
+}
+
+.destination{
+  margin-top: 8px;
 }
 
 ion-card-header {
   background-color: #FFBA4C;
+  height: 45px;
 }
 
 ion-toolbar {
@@ -45,5 +84,29 @@ ion-toolbar {
 }
 
 .buttonAlign {
+  display: inline;
   text-align: center;
+}
+
+.buttons{
+  margin-top:10px;
+}
+
+#continueBtn, #cancelBtn{
+  --border-radius: 24px;
+  --ion-font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: none;
+  width: 120px;
+  height: 37px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 14px;
+}
+
+#continueBtn{
+    --background: #0CBC8B;
+}
+
+#cancelBtn{
+    --background: #C5331E;
 }
