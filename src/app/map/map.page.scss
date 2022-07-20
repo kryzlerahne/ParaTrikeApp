@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+capacitor-google-map {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+ion-card-title {
+  text-align: center;
+  color:white;
+}
+
+ion-card-subtitle {
+  text-align: center;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #212121;
+}
+
+ion-card {
+  display: flex;
+  flex-direction:column;
+  width:100%;
+  margin:0;
+}
+
+ion-card-content{
+  background-color: #EBE5D8;
+}
+
+ion-input {
+  background-color: white;
+}
+
+ion-card-header {
+  background-color: #FFBA4C;
+}
+
+ion-toolbar {
+  color:white;
+}
+
+.buttonAlign {
+  text-align: center;
+}
