@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registration-account',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrationAccountPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  submit(){
+    this.router.navigate(['/map']);
   }
 
 }
