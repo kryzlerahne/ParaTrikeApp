@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ParaTrikeApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
