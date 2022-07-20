@@ -1,9 +1,22 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>mapHome</ion-title>
+<ion-header translucent="true">
+  <ion-toolbar color="danger">
+    <ion-title>Map Direction</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-item>
+    <ion-label position="floating">From</ion-label>
+    <ion-input [(ngModel)]="sourceLocation"></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label position="floating">To</ion-label>
+  <ion-input [(ngModel)]="destinationLocation"></ion-input>
+</ion-item>
+<ion-button expand="full" color="danger" (click)="calculateAndDisplayRoute()"> Get Directions</ion-button>
+<div #mapElement class="map"></div>
 
 </ion-content>
