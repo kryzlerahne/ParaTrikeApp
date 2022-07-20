@@ -1,6 +1,6 @@
 <ion-header translucent="true">
 <ion-toolbar>
-  <ion-title>Map Direction</ion-title>
+  <ion-title>ParaTrike</ion-title>
   <ion-buttons slot="start">
     <ion-menu-button menu="main-menu"></ion-menu-button>
   </ion-buttons>
@@ -13,9 +13,6 @@
     <capacitor-google-map #map></capacitor-google-map>
   </div>
 
-</ion-content>
-
-<ion-content>
   <div class="card">
   <ion-card>
 
@@ -26,14 +23,25 @@
     <ion-card-content>
     <br>
     <ion-card-subtitle>Where are you heading to?</ion-card-subtitle>
-    <br>
-     <ion-input placeholder="Your Location"></ion-input>
-     <ion-input placeholder="Search your Destination"></ion-input><br>
 
-    <div class="buttonAlign">
-      <ion-button color="success">Continue</ion-button><ion-button color="danger">Cancel</ion-button>
+    <ion-item class="location">
+     <ion-icon name="navigate-outline" slot="end" color="medium"></ion-icon>
+     <ion-input placeholder="Your Location" id="locInput"></ion-input>
+    </ion-item>
+
+      <ion-item class="destination">
+        <ion-icon name="location-outline" slot="end" color="medium"></ion-icon>
+       <ion-input placeholder="Search your Destination" id="destination"></ion-input><br>
+      </ion-item>
+
+    <div class="buttons">
+      <div class="buttonAlign">
+        <center>
+          <ion-button id="continueBtn">Continue</ion-button>
+          <ion-button id="cancelBtn" >Cancel</ion-button>
+        </center>
+      </div>
     </div>
-
     </ion-card-content>
   </ion-card>
   </div>
