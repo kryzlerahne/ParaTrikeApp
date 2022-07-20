@@ -27,7 +27,7 @@ export class LoginPage implements OnInit {
       this.form.markAllAsTouched();
       return;
     }
-    this.router.navigate(['/map-home']);
+    this.router.navigate(['/map']);
   }
 
   forgotPassword(){
