@@ -27,10 +27,6 @@ const routes: Routes = [
     loadChildren: () => import('./registration-account/registration-account.module').then( m => m.RegistrationAccountPageModule)
   },
   {
-    path: 'map-home',
-    loadChildren: () => import('./map-home/map-home.module').then( m => m.MapHomePageModule)
-  },
-  {
     path: 'map',
     loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
   },
