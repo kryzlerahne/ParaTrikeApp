@@ -1,0 +1,78 @@
+ion-content {
+    --background: url('../../assets/confirmationbg.png') no-repeat center center/cover;
+  }
+
+ion-label {
+  font-size: 1.5rem;
+  color:#212121;
+  font-weight: bold;
+  font-family: Montserrat;
+  display: flex;
+  text-align: center;
+  letter-spacing: -1.4px;
+}
+
+ion-text {
+  font-family: Montserrat;
+}
+
+ion-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+ion-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+  font-family: Montserrat;
+}
+
+#logo {
+  width: 170px;
+  height: 175px;
+}
+
+#tick {
+  padding-left: 5px;
+}
+
+.vertical-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.alignBttn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  width:100%;
+}
+
+.gBttn, .rBttn {
+  --border-radius: 24px;
+  --ion-font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: none;
+  width: 130px;
+  height: 37px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 14px;
+}
+
+.gBttn{
+    --background: #0CBC8B;
+}
+
+.rBttn{
+    --background: #C5331E;
+}
