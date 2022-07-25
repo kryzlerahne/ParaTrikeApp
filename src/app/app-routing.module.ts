@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'confirmation',
     loadChildren: () => import('./confirmation/confirmation.module').then( m => m.ConfirmationPageModule)
   },
+  {
+    path: 'wallet',
+    loadChildren: () => import('./wallet/wallet.module').then( m => m.WalletPageModule)
+  },
 
 ];
 
