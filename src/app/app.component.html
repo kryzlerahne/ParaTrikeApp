@@ -7,32 +7,54 @@
     </ion-header>
     <ion-content>
       <ion-list>
+        <ion-menu-toggle>
+          <ion-item routerLink="/map">
+            <ion-icon name="home-outline"></ion-icon>&nbsp;&nbsp;
+            <ion-label>Home</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
 
-        <ion-item>
-          <ion-icon name="wallet-outline"></ion-icon>&nbsp;&nbsp;
-          <ion-label (click)="wallet()" >Wallet</ion-label>
-        </ion-item>
+        <ion-menu-toggle>
+          <ion-item routerLink="/wallet">
+            <ion-icon name="wallet-outline"></ion-icon>&nbsp;&nbsp;
+            <ion-label>Wallet</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
 
-        <ion-item>
-          <ion-icon name="refresh-outline"></ion-icon>&nbsp;&nbsp;
-          <ion-label>History</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="alarm-outline"></ion-icon>&nbsp;&nbsp;
-          <ion-label>Scheduled</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="notifications-outline"></ion-icon>&nbsp;&nbsp;
-          <ion-label>Notifications</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="help-circle-outline"></ion-icon>&nbsp;&nbsp;
-          <ion-label>Help Center</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="settings-outline"></ion-icon>&nbsp;&nbsp;
-          <ion-label>Settings</ion-label>
-        </ion-item>
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-icon name="refresh-outline"></ion-icon>&nbsp;&nbsp;
+            <ion-label>History</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-icon name="alarm-outline"></ion-icon>&nbsp;&nbsp;
+            <ion-label>Scheduled</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-icon name="notifications-outline"></ion-icon>&nbsp;&nbsp;
+            <ion-label>Notifications</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-icon name="help-circle-outline"></ion-icon>&nbsp;&nbsp;
+            <ion-label>Help Center</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item>
+            <ion-icon name="log-out-outline"></ion-icon>&nbsp;&nbsp;
+            <ion-label (click)="logout()">Logout</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
       </ion-list>
     </ion-content>
   </ion-menu>

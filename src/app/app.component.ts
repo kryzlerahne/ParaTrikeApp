@@ -12,4 +12,13 @@ export class AppComponent {
   wallet() {
     this.router.navigate(['/wallet']);
   }
+
+  home() {
+    this.router.navigate(['/map']);
+  }
+
+  logout() {
+    this.router.navigate(['/login']);
+  }
+
 }
