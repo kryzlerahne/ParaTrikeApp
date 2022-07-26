@@ -9,11 +9,30 @@
     <ion-label color="white" class="ion-margin on-padding start" id="signUpLabel"> Sign Up to ParaTrike </ion-label>
     <p id="subtitle"> Book your next tricycle in just one tap. </p>
 
+  <form [formGroup]="form">
     <ion-item class="mobileInput">
-      <ion-label position="fixed" id="mobileFixed"> +639 </ion-label> <!--Fix Space after 9-->
+       <ion-label position="fixed" id="mobileFixed"> +639 </ion-label><!--Fix Space after 9-->
       <!--<ion-icon name="chevron-down-outline"></ion-icon>-->
-      <ion-input placeholder="972 310 2651" type="tel" minlength="10" maxlength="10"></ion-input>
+      <ion-input
+      formControlName="phone"
+      placeholder="972 310 2651"
+      type="tel"
+      minlength="10"
+      maxlength="10">
+      </ion-input>
     </ion-item>
+
+    <!--Form Validation-->
+    <ion-text *ngIf="!form.get('phone').valid && form.get('phone').touched">
+      <ion-text class="error" *ngIf="form.get('phone').hasError('required')" color="danger">
+        * Please enter your mobile number.
+      </ion-text>
+      <ion-text class="error" *ngIf="form.get('phone').hasError('minlength') &&
+      !form.get('phone').hasError('required')" color="danger">
+      * Please enter a valid mobile number.
+      </ion-text>
+    </ion-text>
+  </form>
 
 <ion-button (click)="register()"> Sign up with Phone </ion-button>
 <p class="p1" (click)="signIn()"> <u>I have an account already </u></p>
