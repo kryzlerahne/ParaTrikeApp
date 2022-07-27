@@ -36,6 +36,14 @@ ion-input{
   font-size: 15px;
 }
 
+.labels{
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: -0.4px;
+  color: gray;
+}
+
 .line1{
   padding-top: 40px;
   padding-bottom: 15px;
@@ -68,9 +76,6 @@ ion-input{
 
 .error-message{
   color: var(--ion-color-danger);
-  //font-size: 0.75em !important;
-  //display:block;
-  //transform: translateY(-5vh);
   margin-left:3vw;
   font-family: 'Montserrat';
 }

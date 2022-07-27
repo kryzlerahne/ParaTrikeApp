@@ -9,7 +9,8 @@
 
             <form [formGroup] = "registrationForm" (ngSubmit)="submit()">
               <ion-item>
-                <ion-input formControlName="firstName" autocapitalize type="text" placeholder="First Name"></ion-input>
+                <ion-label position="floating" class="labels">First Name</ion-label>
+                <ion-input formControlName="firstName" autocapitalize type="text" ></ion-input>
               </ion-item>
               <div *ngFor="let error of errorMessages.firstName">
                 <ng-container *ngIf="firstName.hasError(error.type) && (firstName.dirty || firstName.touched)">
@@ -17,7 +18,8 @@
                 </ng-container>
               </div>
               <ion-item>
-                <ion-input formControlName="lastName" type="text" placeholder="Last Name"></ion-input>
+                <ion-label position="floating" class="labels">Last Name</ion-label>
+                <ion-input formControlName="lastName" type="text" ></ion-input>
               </ion-item>
               <div *ngFor="let error of errorMessages.lastName">
                 <ng-container *ngIf="lastName.hasError(error.type) && (lastName.dirty || lastName.touched)">
@@ -25,7 +27,8 @@
                 </ng-container>
               </div>
               <ion-item>
-                <ion-input type="text" placeholder="Referral Code" class="adjust1"></ion-input>
+                <ion-label position="floating" class="labels">Referral Code</ion-label>
+                <ion-input type="text" class="adjust1"></ion-input>
               </ion-item>
 
               <ion-label class="contactHeading">Contact Details</ion-label>
@@ -33,7 +36,8 @@
               <ion-img src="../../assets/Line.png" alt="line" align="right" class="line2"></ion-img>
 
               <ion-item>
-                <ion-input formControlName="email" type="email" placeholder="Email Address"></ion-input>
+                <ion-label position="floating" class="labels">Email Address</ion-label>
+                <ion-input formControlName="email" type="email"></ion-input>
               </ion-item>
               <div *ngFor="let error of errorMessages.email">
                 <ng-container *ngIf="email.hasError(error.type) && (email.dirty || email.touched)">
@@ -41,7 +45,8 @@
                 </ng-container>
               </div>
               <ion-item>
-                <ion-input formControlName="mobileNum" type="tel" minlength="11" maxlength="11" placeholder="Mobile Number"></ion-input>
+                <ion-label position="floating" class="labels">Mobile Number</ion-label>
+                <ion-input formControlName="mobileNum" type="tel" minlength="11" maxlength="11"></ion-input>
               </ion-item>
               <div *ngFor="let error of errorMessages.mobileNum">
                 <ng-container *ngIf="mobileNum.hasError(error.type) && (mobileNum.dirty || mobileNum.touched)">
