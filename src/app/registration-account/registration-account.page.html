@@ -6,18 +6,43 @@
               <ion-label class="headings">Account Details</ion-label>
                 <ion-img src="../../assets/accountD.png" align="top" id="acIcon"></ion-img>
                 <ion-img src="../../assets/Line.png" alt="line" align="right" class="line2"></ion-img>
+
+            <form [formGroup]="accountForm" (ngSubmit)="submit()">
               <ion-item>
-                <ion-input type="text" placeholder="Username"></ion-input>
+                <ion-label position="floating" class="labels">Username</ion-label>
+                <ion-input type="text" formControlName="username"></ion-input>
               </ion-item>
+              <div *ngFor="let error of errorMessages.username">
+                <ng-container *ngIf="username.hasError(error.type) && (username.dirty || username.touched)">
+                  <small class="error-message">{{error.message}}</small>
+                </ng-container>
+              </div>
               <ion-item>
-                <ion-input type="text" placeholder="Password"></ion-input>
+                <ion-label position="floating" class="labels">Password</ion-label>
+                <ion-input [type]="type ? 'password' : 'text'" formControlName="password"></ion-input>
+                <ion-icon [name]="type ? 'eye-outline' : 'eye-off-outline'" (click)="changeEye()"
+                slot="end" color="medium" class="eyeIcon"></ion-icon>
               </ion-item>
+              <div *ngFor="let error of errorMessages.password">
+                <ng-container *ngIf="password.hasError(error.type) && (password.dirty || password.touched)">
+                  <small class="error-message">{{error.message}}</small>
+                </ng-container>
+              </div>
               <ion-item>
-                <ion-input type="text" placeholder="Retype Password" class="adjust1"></ion-input>
+                <ion-label position="floating" class="labels">Retype Password</ion-label>
+                <ion-input [type]="type2 ? 'password' : 'text'" class="adjust1" formControlName="retypePw"></ion-input>
+                <ion-icon [name]="type2 ? 'eye-outline' : 'eye-off-outline'" (click)="changeEye2()"
+                slot="end" color="medium" class="eyeIcon"></ion-icon>
               </ion-item>
+              <div *ngFor="let error of errorMessages.retypePw">
+                <ng-container *ngIf="retypePw.hasError(error.type) && (retypePw.dirty || retypePw.touched)">
+                  <small class="error-message">{{error.message}}</small>
+                </ng-container>
+              </div>
+            </form>
 
               <center>
-                <ion-button (click)="submit()"> Submit </ion-button>
+                <ion-button type="submit" [disabled]="!accountForm.valid" (click)="submit()"> Submit </ion-button>
               </center>
           </div>
       </div>

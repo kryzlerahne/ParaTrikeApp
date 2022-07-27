@@ -36,6 +36,14 @@ ion-input{
   font-size: 15px;
 }
 
+.labels{
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: -0.4px;
+  color: gray;
+}
+
 .line1{
   padding-top: 40px;
   padding-bottom: 15px;
@@ -69,9 +77,21 @@ ion-input{
 #acIconCase{
   position: absolute ;
 }
+
 #acIcon{
   width:40px;
   margin-left: 170px;
   margin-top: -34px;
   vertical-align: middle;
+}
+
+.eyeIcon{
+  width: 25px;
+  margin-top: 10px;
+}
+
+.error-message{
+  color: var(--ion-color-danger);
+  margin-left:3vw;
+  font-family: 'Montserrat';
 }
