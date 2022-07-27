@@ -36,16 +36,6 @@ ion-input{
   font-size: 15px;
 }
 
-/**#acIconCase{
-  position: absolute ;
-}
-#acIcon{
-  width:40px;
-  margin-left: 200px;
-  margin-top: -34px;
-  vertical-align: middle;
-}**/
-
 .line1{
   padding-top: 40px;
   padding-bottom: 15px;
@@ -74,4 +64,13 @@ ion-input{
   color:white;
   width:12px;
   margin-top: 108px;
+}
+
+.error-message{
+  color: var(--ion-color-danger);
+  //font-size: 0.75em !important;
+  //display:block;
+  //transform: translateY(-5vh);
+  margin-left:3vw;
+  font-family: 'Montserrat';
 }

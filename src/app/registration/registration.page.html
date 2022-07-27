@@ -6,45 +6,52 @@
               <ion-label class="headings">Personal Details</ion-label>
                 <ion-icon name="person-circle-outline"></ion-icon>
                 <ion-img src="../../assets/Line.png" alt="line" align="right" class="line2"></ion-img>
+
+            <form [formGroup] = "registrationForm" (ngSubmit)="submit()">
               <ion-item>
-                <ion-input type="text" placeholder="First Name"></ion-input>
+                <ion-input formControlName="firstName" autocapitalize type="text" placeholder="First Name"></ion-input>
               </ion-item>
+              <div *ngFor="let error of errorMessages.firstName">
+                <ng-container *ngIf="firstName.hasError(error.type) && (firstName.dirty || firstName.touched)">
+                  <small class="error-message">{{error.message}}</small>
+                </ng-container>
+              </div>
               <ion-item>
-                <ion-input type="text" placeholder="Last Name"></ion-input>
+                <ion-input formControlName="lastName" type="text" placeholder="Last Name"></ion-input>
               </ion-item>
+              <div *ngFor="let error of errorMessages.lastName">
+                <ng-container *ngIf="lastName.hasError(error.type) && (lastName.dirty || lastName.touched)">
+                  <small class="error-message">{{error.message}}</small>
+                </ng-container>
+              </div>
               <ion-item>
                 <ion-input type="text" placeholder="Referral Code" class="adjust1"></ion-input>
               </ion-item>
 
-            <!--  <div id="acIconCase">
-                <ion-label>Account Details</ion-label>
-                <ion-img src="../../assets/accountD.png" align="top" id="acIcon"></ion-img>
-              </div>
-
-              <div class="line1">
-                <ion-img src="../../assets/Line.png"></ion-img>
-              </div>
-                  <ion-item>
-                    <ion-input type="text" placeholder="Username"></ion-input>
-                  </ion-item>
-                  <ion-item>
-                    <ion-input type="password" placeholder="Password"></ion-input>
-                  </ion-item>
-                  <ion-item>
-                    <ion-input type="password" placeholder="Re-type Password" class="adjust1"></ion-input>
-                  </ion-item> -->
-
               <ion-label class="contactHeading">Contact Details</ion-label>
               <ion-icon name="mail-outline"></ion-icon>
               <ion-img src="../../assets/Line.png" alt="line" align="right" class="line2"></ion-img>
+
               <ion-item>
-                <ion-input type="email" placeholder="Email Address"></ion-input>
+                <ion-input formControlName="email" type="email" placeholder="Email Address"></ion-input>
               </ion-item>
+              <div *ngFor="let error of errorMessages.email">
+                <ng-container *ngIf="email.hasError(error.type) && (email.dirty || email.touched)">
+                  <small class="error-message">{{error.message}}</small>
+                </ng-container>
+              </div>
               <ion-item>
-                <ion-input type="tel" placeholder="Mobile Number"></ion-input>
+                <ion-input formControlName="mobileNum" type="tel" minlength="11" maxlength="11" placeholder="Mobile Number"></ion-input>
               </ion-item>
+              <div *ngFor="let error of errorMessages.mobileNum">
+                <ng-container *ngIf="mobileNum.hasError(error.type) && (mobileNum.dirty || mobileNum.touched)">
+                  <small class="error-message">{{error.message}}</small>
+                </ng-container>
+              </div>
+            </form>
+
               <center>
-                <ion-button (click)="next()"> Next <ion-icon name="arrow-forward-outline" id="arrow"></ion-icon> </ion-button>
+                <ion-button type="submit" [disabled]="!registrationForm.valid" (click)="submit()"> Next <ion-icon name="arrow-forward-outline" id="arrow"></ion-icon> </ion-button>
               </center>
 
           </div>
