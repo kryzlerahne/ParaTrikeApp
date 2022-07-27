@@ -37,7 +37,59 @@
       <div class="buttonAlign">
         <center>
           <ion-button id="continueBtn">Continue</ion-button>
-          <ion-button id="cancelBtn" >Cancel</ion-button>
+
+          <ion-modal id="drivermodal" #modal trigger="continueBtn">
+              <ng-template>
+                <div class="wrapper">
+                  <div id="driverContainer">
+                    <h1 id="driverHeading">List of Active Drivers</h1>
+                  </div>
+
+                  <ion-list lines="none">
+                    <ion-item id="driver1" button="true" detail="true" (click)="modal.dismiss()">
+                      <ion-icon name="person-circle"></ion-icon>
+                      <ion-label>
+                        <h2 class="driverName">Karl Pangilinan</h2>
+                        <h3 class="distance">192m away</h3>
+                      </ion-label>
+                    </ion-item>
+                    <ion-item button="true" detail="true" (click)="modal.dismiss()">
+                      <ion-icon name="person-circle"></ion-icon>
+                      <ion-label>
+                        <h2 class="driverName"> Darryl Torino</h2>
+                        <h3 class="distance">218m away</h3>
+                      </ion-label>
+                    </ion-item>
+                    <ion-item button="true" detail="true" (click)="modal.dismiss()">
+                      <ion-icon name="person-circle"></ion-icon>
+                      <ion-label>
+                        <h2 class="driverName"> Alchie Carampil</h2>
+                        <h3 class="distance">312m away</h3>
+                      </ion-label>
+                    </ion-item>
+                    <ion-item button="true" detail="true" (click)="modal.dismiss()">
+                      <ion-icon name="person-circle"></ion-icon>
+                      <ion-label>
+                        <h2 class="driverName"> Alexis Cueto</h2>
+                        <h3 class="distance">327m away</h3>
+                      </ion-label>
+                    </ion-item>
+                    <ion-item button="true" detail="true" (click)="modal.dismiss()">
+                      <ion-icon name="person-circle"></ion-icon>
+                      <ion-label>
+                        <h2 class="driverName"> Renzo Cardona</h2>
+                        <h3 class="distance">400m away</h3>
+                      </ion-label>
+                    </ion-item>
+                  </ion-list>
+                  <center>
+                    <ion-button id="cancelBtn" (click)="modal.dismiss()">Cancel</ion-button>
+                  </center>
+                </div>
+              </ng-template>
+          </ion-modal>
+
+
         </center>
       </div>
     </div>

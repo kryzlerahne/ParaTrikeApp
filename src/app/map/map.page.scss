@@ -110,3 +110,70 @@ ion-toolbar {
 #cancelBtn{
     --background: #C5331E;
 }
+
+ion-modal#drivermodal {
+ --width:300px;
+  --height: 415px;
+  --border-radius: 15px;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  --overflow-y:scroll;
+  --background-color: transparent;
+}
+
+ion-modal#drivermodal h1 {
+  margin: 20px 20px 10px 20px;
+}
+
+ion-modal#drivermodal ion-icon {
+  margin-right: 6px;
+  width: 48px;
+  height: 48px;
+  padding: 4px 0;
+  color: #aaaaaa;
+}
+
+ion-modal#example-modal .wrapper {
+  margin-bottom: 10px;
+}
+
+.wrapper{
+//  overflow: scroll;
+}
+
+#driverHeading{
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: white;
+  padding-top: 15px;
+}
+
+#driverContainer{
+  background-color:#0CBC8B;
+  border-radius: 15px 15px 0 0;
+  width: 300px;
+  height: 50px;
+  margin-top: -20px;
+}
+
+.driverName{
+//  display: block;
+  background-color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.distance{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  color:#0CBC8B;
+}
