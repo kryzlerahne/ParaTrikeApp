@@ -1,6 +1,8 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { GoogleMap, Marker } from '@capacitor/google-maps';
 import { ModalController } from '@ionic/angular';
+import { Router } from '@angular/router';
+import { IonModal } from '@ionic/angular';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -9,10 +11,16 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./map.page.scss'],
 })
 export class MapPage {
+  @ViewChild(IonModal) modal: IonModal;
   @ViewChild('map')mapRef: ElementRef;
   map: GoogleMap;
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  tripDetails() {
+    this.router.navigate(['/trip-details']);
+    this.modal.dismiss();
+  }
 
   ionViewDidEnter() {
     this.createMap();
