@@ -1,0 +1,66 @@
+ion-content{
+    --background: url('../../assets/historybg.png') no-repeat center center/cover;
+}
+
+ion-list-header {
+  margin-top: -35px
+}
+
+ion-card-subtitle {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 10px;
+  color: black;
+}
+
+ion-grid {
+  margin-top: -30px;
+}
+
+b, p {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  color: black;
+}
+
+#logo {
+  width: 189px;
+  height: 184px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  padding-bottom:0px;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-size: 28px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.recent {
+  font-family: 'Montserrat';
+}
+
+.lastMonth {
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+.recentRides{
+  width: 95%;
+  border-radius: 5px;
+  margin-bottom: 1.5vh;
+  padding-left: 10px;
+}
+
+.logoTrike {
+  width: 55px;
+  height: 60px;
+  padding-right: 5px;
+}
