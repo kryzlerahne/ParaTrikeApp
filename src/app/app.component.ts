@@ -22,7 +22,7 @@ export class AppComponent {
    },
    {
      title: 'History',
-     url: '',
+     url: '/history',
      icon: 'refresh'
    },
    {
