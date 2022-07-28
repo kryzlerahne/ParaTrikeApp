@@ -1,14 +1,14 @@
-<ion-header translucent="true">
-<ion-toolbar>
-  <ion-buttons slot="start">
-    <ion-menu-button menu="main-menu"></ion-menu-button>
-  </ion-buttons>
-</ion-toolbar>
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+     <ion-title>History</ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
   <ion-list class="bg-transparent">
-
     <ion-img src="./assets/logo.png" id="logo" alt="logo"></ion-img>
     <ion-list-header> <ion-label class="title"> Rides History </ion-label></ion-list-header>
     <ion-item color="none" lines="none">
@@ -53,7 +53,7 @@
     </ion-item> <br>
 
     <ion-list-header>
-      <ion-label class="lastMonth">June 2019</ion-label>
+      <ion-label class="lastMonth">June 2022</ion-label>
     </ion-list-header>
     <ion-item class="recentRides" lines="none" *ngFor="let item of lastRides">
       <ion-img src="./assets/logo.png" class="logoTrike" alt="trike"></ion-img>

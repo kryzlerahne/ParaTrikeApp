@@ -7,13 +7,33 @@ ion-list-header {
 }
 
 ion-card-subtitle {
+  margin-top: 10px;
   text-align: center;
   font-family: 'Montserrat';
   font-size: 10px;
   color: black;
 }
 
-ion-toolbar {
+ion-header{
+  --background: transparent;
+}
+
+ion-content{
+//--background: #FFF0D8;
+font-family: 'Montserrat';
+}
+
+ion-title{
+  font-family: 'Montserrat';
+  color:white;
+}
+
+ion-card{
+  border-radius: 10px 10px 10px 10px;
+  background-color: #FFBA4C;
+}
+
+ion-menu-button{
   color:white;
 }
 
@@ -38,7 +58,7 @@ b, p {
 
 .title {
   font-family: 'Montserrat';
-  font-size: 28px;
+  font-size: 22px;
   text-align: center;
   margin-top: -20px;
 }
@@ -48,11 +68,14 @@ b, p {
 }
 
 .recent {
+  margin-top: 30px;
+  font-size: 20px;
   font-family: 'Montserrat';
 }
 
 .lastMonth {
   font-family: 'Montserrat';
+  margin-top: 30px;
   font-size: 20px;
 }
 
