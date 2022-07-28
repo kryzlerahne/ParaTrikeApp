@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  activePageTitle = 'Home';
+  activePageTitle = 'Map';
   Pages = [
    {
      title: 'Home',
