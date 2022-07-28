@@ -7,6 +7,46 @@ import { Router } from '@angular/router';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+
+  activePageTitle = 'Home';
+  Pages = [
+   {
+     title: 'Home',
+     url: '/map',
+     icon: 'home'
+   },
+   {
+     title: 'Wallet',
+     url: '/wallet',
+     icon: 'wallet'
+   },
+   {
+     title: 'History',
+     url: '',
+     icon: 'refresh'
+   },
+   {
+     title: 'Scheduled',
+     url: '',
+     icon: 'alarm'
+   },
+   {
+     title: 'Notifications',
+     url: '',
+     icon: 'notifications'
+   },
+   {
+     title: 'Help Center',
+     url: '',
+     icon: 'help-circle'
+   },
+   {
+     title: 'Logout',
+     url: '/login',
+     icon: 'log-out'
+   }
+ ];
+
   constructor(private router: Router) {}
 
   wallet() {
