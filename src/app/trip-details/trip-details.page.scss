@@ -1,0 +1,210 @@
+.container {
+  width: 100%;
+  height: 400px;
+}
+
+capacitor-google-map {
+  display: inline-block;
+  width: 100%;
+  height: 340px;
+  z-index:1;
+}
+
+ion-title{
+  left:30px;
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.001em;
+  text-align: center;
+  margin-left:-50px;
+}
+
+ion-card {
+  display: flex;
+  flex-direction:column;
+  width:100%;
+  margin: -96px 0 0 0;
+}
+
+ion-card-content{
+  background-color: #EBE5D8;
+  border-radius: 28px 28px 0 0;
+  height: 379px;
+  display: block;
+  z-index:2;
+}
+
+ion-toolbar {
+  color:white;
+}
+
+#driverDp{
+  width: 50px;
+  height: 50px;
+  color: #272727;
+}
+
+#callIcon{
+  width: 30px;
+  height: 30px;
+  color: #0CBC8B;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#driverIcon{
+  margin-top: -15px;
+}
+
+.driverName, .details{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  margin-left: 10px;
+  color: #272727;
+}
+
+.rating{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  color:#272727;
+}
+
+#star{
+  color:#FFBA4C;
+  margin-left: 10px;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+#vehicleDetails{
+  background-color: transparent;
+  border: 2px solid #9E9E9E;
+  border-radius: 10px;
+  height: 90px;
+}
+
+.vl {
+  border-left: 3px solid #9E9E9E;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 94px;
+}
+
+#idNum{
+  position: absolute;
+  right: 50px;
+  margin-top: -80px;
+}
+
+.vehicleText, .bookingText{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  color:#272727;
+  line-height: 15px;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.plateNumber{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  margin-left: 45px;
+  color: #FFBA4C;
+  letter-spacing: 0.05em;
+}
+
+.bookingID{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  margin-left: 61px;
+  color: #FFBA4C;
+  letter-spacing: 0.05em;
+}
+
+#line{
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+#location, #locLine{
+  position: absolute;
+}
+
+#destination{
+  margin-top: 55px;
+}
+
+.hr{
+  padding-bottom: 20px;
+  margin-top: -58px;
+  margin-left: 45px;
+  position: absolute;
+  width: 258px;
+  border-bottom: 1px solid rgb(158, 158, 158, 0.6);
+}
+
+.details{
+  margin-top: 23px;
+}
+
+.detail{
+  margin-top: -17px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  margin-left: 10px;
+  color: #FFBA4C;
+}
+
+#continueBtn{
+  --border-radius: 24px;
+  --ion-font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: none;
+  width: 130px;
+  height: 37px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 14px;
+  --background: #0CBC8B;
+  margin-top: -1px;
+  margin-left: 20%;
+}
+
+#cancelBtn{
+  --border-radius: 24px;
+  --ion-font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: none;
+  width: 130px;
+  height: 37px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 14px;
+  --background: #C5331E;
+  margin-top: -1px;
+  margin-left: 30%;
+}
+
+#continueDiv, #closeDiv{
+  display: inline-block;
+}

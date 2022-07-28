@@ -1,0 +1,62 @@
+<ion-header translucent="true">
+<ion-toolbar>
+  <ion-title> Trip Details</ion-title>
+  <ion-buttons slot="start">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <capacitor-google-map #map></capacitor-google-map>
+  </div>
+
+  <div class="card">
+  <ion-card>
+    <ion-card-content>
+      <div id="driverIcon">
+        <ion-list class="bg-transparent">
+          <ion-item color="none" lines="none">
+            <ion-icon name="person-circle" id="driverDp"></ion-icon>
+            <ion-label>
+              <h2 class="driverName">Karl Pangilinan</h2>
+              <h3 class="rating"><ion-icon name="star" id="star"></ion-icon> 4.9</h3>
+            </ion-label>
+            <ion-icon name="call" id="callIcon"></ion-icon>
+          </ion-item>
+        </ion-list>
+      </div>
+      <div class="vl"></div>
+      <div id="vehicleDetails">
+        <h2 class="vehicleText"> &nbsp;Tricycle <br> Number </h2>
+        <h2 class="plateNumber"> 6398 BX </h2>
+      </div>
+      <div id="idNum">
+        <h2 class="bookingText"> Booking ID </h2>
+        <h2 class="bookingID"> AZ9521 </h2>
+      </div>
+      <div id="locLine">
+        <img src = "./assets/locationLine.png" id="line">
+        <div class="hr"></div>
+      </div>
+      <div id="location">
+        <h2 class="bookingText"> 7-Eleven, Bolbok, Batangas </h2>
+      </div>
+      <div id="destination">
+        <h2 class="bookingText"> Sta. Rita de Cascia Parish Church </h2>
+      </div>
+      <div class="infoTxt">
+        <h2 class="details"> <pre class="details"> Distance              Time                Price </pre> </h2>
+        <h2> <pre class="detail">     192m              5 mins         ₱40.00</pre></h2>
+      </div>
+      <div id="continueDiv">
+        <ion-button id="continueBtn" (click)="continue()">Continue <ion-icon name="checkmark-done"></ion-icon></ion-button>
+      </div>
+      <div id="closeDiv">
+        <ion-button id="cancelBtn" (click)="cancel()">Cancel <ion-icon name="close"></ion-icon></ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  </div>
+</ion-content>
