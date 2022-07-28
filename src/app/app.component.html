@@ -75,55 +75,14 @@
         </ion-label>
       </div>
 
-      <ion-list class="menu-items" lines="none">
-        <ion-menu-toggle>
-          <ion-item routerLink="/map" class="active"  detail="true">
-            <ion-icon name="home-outline"></ion-icon>&nbsp;&nbsp;
-            <ion-label>Home</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-
-        <ion-menu-toggle>
-          <ion-item routerLink="/wallet"  detail="true">
-            <ion-icon name="wallet-outline"></ion-icon>&nbsp;&nbsp;
-            <ion-label>Wallet</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-
-        <ion-menu-toggle>
-          <ion-item detail="true">
-            <ion-icon name="refresh-outline"></ion-icon>&nbsp;&nbsp;
-            <ion-label>History</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-
-        <ion-menu-toggle>
-          <ion-item  detail="true">
-            <ion-icon name="alarm-outline"></ion-icon>&nbsp;&nbsp;
-            <ion-label>Scheduled</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-
-        <ion-menu-toggle>
-          <ion-item  detail="true">
-            <ion-icon name="notifications-outline"></ion-icon>&nbsp;&nbsp;
-            <ion-label>Notifications</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-
-        <ion-menu-toggle>
-          <ion-item  detail="true">
-            <ion-icon name="help-circle-outline"></ion-icon>&nbsp;&nbsp;
-            <ion-label>Help Center</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-
-        <ion-menu-toggle>
-          <ion-item  detail="true">
-            <ion-icon name="log-out-outline"></ion-icon>&nbsp;&nbsp;
-            <ion-label (click)="logout()">Logout</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
+      <ion-list class="menu-items">
+        <ion-menu-toggle auto-hide="false" *ngFor="let pages of Pages; let i = index">
+           <ion-item (click)="activeIndex = i" routerDirection="root" [routerLink]="[pages.url]" lines="none"
+             detail="true" [class.selected]="activeIndex == i">
+             <ion-icon slot="start" [ios]="pages.icon + '-outline'" [md]="pages.icon + '-sharp'"></ion-icon>
+             <ion-label>{{ pages.title }}</ion-label>
+           </ion-item>
+         </ion-menu-toggle>
       </ion-list>
 
     </ion-content>
