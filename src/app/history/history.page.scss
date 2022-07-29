@@ -7,10 +7,10 @@ ion-list-header {
 }
 
 ion-card-subtitle {
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
   font-family: 'Montserrat';
-  font-size: 10px;
+  font-size: 12px;
   color: black;
 }
 
@@ -29,8 +29,10 @@ ion-title{
 }
 
 ion-card{
+  margin-top: 45px;
   border-radius: 10px 10px 10px 10px;
-  background-color: #FFBA4C;
+  background-color: white;
+  box-shadow: -1px 11px 13px -6px rgb(87, 86, 86);
 }
 
 ion-menu-button{
@@ -52,15 +54,26 @@ b, p {
   height: 184px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   padding-bottom:0px;
 }
 
 .title {
   font-family: 'Montserrat';
-  font-size: 22px;
+  font-size: 19px;
   text-align: center;
   margin-top: -20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-top: 20px;
+  color: white;
+}
+
+#ridesTxt{
+    background-color: #FFBA4C;
+    margin-left: 33px;
+    width: 290px;
+    border-radius: 20px;
 }
 
 .bg-transparent {
@@ -68,15 +81,23 @@ b, p {
 }
 
 .recent {
-  margin-top: 30px;
-  font-size: 20px;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  font-size: 1rem;
   font-family: 'Montserrat';
+  letter-spacing: -0.5px;
+  text-shadow: 1px;
 }
 
 .lastMonth {
   font-family: 'Montserrat';
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 20px;
+  padding-bottom: 10px;
+  font-size: 1rem;
+  font-family: 'Montserrat';
+  letter-spacing: -0.5px;
+  text-shadow: 1px;
 }
 
 .recentRides{
@@ -90,4 +111,26 @@ b, p {
   width: 55px;
   height: 60px;
   padding-right: 5px;
+}
+
+.price{
+  font-size: 1rem;
+  font-family: 'Montserrat';
+  letter-spacing: 0.5px;
+  text-shadow: 1px;
+  font-weight: bold;
+}
+
+ion-chip{
+  background-color: #FFBA4C;
+}
+
+ion-icon{
+  color: white;
+}
+
+.value{
+  color: white;
+  font-weight: bold;
+  //font-family: 'Montserrat';
 }

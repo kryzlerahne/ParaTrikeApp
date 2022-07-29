@@ -10,7 +10,7 @@
 <ion-content [fullscreen]="true">
   <ion-list class="bg-transparent">
     <ion-img src="./assets/logo.png" id="logo" alt="logo"></ion-img>
-    <ion-list-header> <ion-label class="title"> Rides History </ion-label></ion-list-header>
+    <ion-list-header id="ridesTxt"> <ion-label class="title"> RIDES HISTORY </ion-label></ion-list-header>
     <ion-item color="none" lines="none">
       <ion-grid>
         <ion-row>
@@ -18,9 +18,11 @@
             <ion-card>
               <ion-card-header>
                 <ion-card-subtitle>Total Distance Travelled</ion-card-subtitle>
-                <ion-chip outline color="dark">
-                  <ion-label><ion-icon name="car"></ion-icon> 250km</ion-label>
-                </ion-chip>
+                <center>
+                  <ion-chip>
+                    <ion-label class="value"><ion-icon name="car"></ion-icon> 250km</ion-label>
+                  </ion-chip>
+                </center>
               </ion-card-header>
             </ion-card>
           </ion-col>
@@ -28,9 +30,11 @@
             <ion-card>
               <ion-card-header>
                 <ion-card-subtitle>Total Money Spent</ion-card-subtitle>
-                <ion-chip outline color="dark">
-                  <ion-label>₱ 285.00</ion-label>
-                </ion-chip>
+                <center>
+                  <ion-chip>
+                    <ion-label class="value">₱ 285.00</ion-label>
+                  </ion-chip>
+                </center>
               </ion-card-header>
             </ion-card>
           </ion-col>
@@ -39,7 +43,7 @@
     </ion-item>
 
     <ion-list-header>
-      <ion-label class="recent">Recent Rides</ion-label>
+      <ion-label class="recent">RECENT RIDES</ion-label>
     </ion-list-header>
     <ion-item class="recentRides" lines="none" *ngFor="let item of rides">
       <ion-img src="./assets/logo.png" class="logoTrike" alt="trike"></ion-img>
@@ -49,11 +53,11 @@
           {{item.date}}          {{item.time}}
         </p>
       </ion-label>
-      <ion-text slot="end" [color]="item.amount > 0 ? 'success' : 'danger'">₱ {{item.amount}} </ion-text>
+      <ion-text class="price" slot="end" [color]="item.amount > 0 ? 'success' : 'danger'">₱ {{item.amount}} </ion-text>
     </ion-item> <br>
 
     <ion-list-header>
-      <ion-label class="lastMonth">June 2022</ion-label>
+      <ion-label class="lastMonth">JUNE 2022</ion-label>
     </ion-list-header>
     <ion-item class="recentRides" lines="none" *ngFor="let item of lastRides">
       <ion-img src="./assets/logo.png" class="logoTrike" alt="trike"></ion-img>
@@ -63,7 +67,7 @@
           {{item.date}}          {{item.time}}
         </p>
       </ion-label>
-      <ion-text slot="end" [color]="item.amount > 0 ? 'success' : 'danger'">₱ {{item.amount}} </ion-text>
+      <ion-text class="price" slot="end" [color]="item.amount > 0 ? 'success' : 'danger'">₱ {{item.amount}} </ion-text>
     </ion-item>
 
   </ion-list>
