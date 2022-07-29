@@ -162,6 +162,14 @@ ion-toolbar {
   border-bottom: 1px solid rgb(158, 158, 158, 0.6);
 }
 
+.hr2{
+  margin-top: 15px;
+  margin-left: 27px;
+  position: absolute;
+  width: 245px;
+  border-bottom: 1px solid rgb(158, 158, 158, 0.6);
+}
+
 .details{
   margin-top: 23px;
 }
@@ -177,7 +185,7 @@ ion-toolbar {
   color: #FFBA4C;
 }
 
-#continueBtn{
+#continueButton{
   --border-radius: 24px;
   --ion-font-family: 'Montserrat';
   font-weight: 400;
@@ -207,4 +215,150 @@ ion-toolbar {
 
 #continueDiv, #closeDiv{
   display: inline-block;
+}
+
+//modal css
+
+ion-modal#successModal {
+ --width:300px;
+  --height: 415px;
+  --border-radius: 15px;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  --overflow-y:scroll;
+  --background-color: transparent;
+}
+
+ion-modal#successModal h1 {
+  margin: 20px 20px 10px 20px;
+}
+
+ion-modal#successModal ion-icon {
+  margin-right: 6px;
+  width: 48px;
+  height: 48px;
+  padding: 4px 0;
+  color: #aaaaaa;
+}
+
+ion-modal#successModal .wrapper {
+  margin-bottom: 10px;
+}
+
+#heading{
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: white;
+  padding-top: 15px;
+}
+
+#tricInfo{
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: white;
+  margin-top: -7px;
+}
+
+#container{
+  background-color:#0CBC8B;
+  border-radius: 15px 15px 0 0;
+  width: 300px;
+  height: 69px;
+  margin-top: -20px;
+}
+
+.bookingDetails{
+  height: 280px;
+}
+
+#proceedBtn{
+  --border-radius: 24px;
+  --ion-font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: none;
+  width: 225px;
+  height: 37px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 14px;
+  --background: #0CBC8B;
+}
+
+#moneyIcon{
+  width: 20px !important;
+  height: 20px !important;
+  padding-left: 7px !important;
+  color: white !important;
+}
+
+#totalTxt, #totalPrice {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 450;
+  line-height: 22px;
+  color: #272727;
+  text-align: center;
+  display: inline-block;
+  font-weight: 600;
+}
+
+#totalDiv, #totalTxt{
+  width: 90px;
+  margin-left: 35px;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+#priceDiv, #totalPrice{
+  width: 110px;
+  margin-left: -20px;
+  font-size: 38px;
+}
+
+#totalDiv, #priceDiv{
+  display: inline-block;
+}
+
+#detail1, #detail2, #detail3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 14px;
+  color: #272727;
+  padding-left: 20px;
+}
+
+#note{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 14px;
+  color: #272727;
+  margin-top: 45px;
+  padding-left: 20px;
+  text-align: center;
+  width: 280px;
+}
+
+/* The Close Button */
+.close {
+  color: #C5331E;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #C67D72;
+  text-decoration: none;
+  cursor: pointer;
 }

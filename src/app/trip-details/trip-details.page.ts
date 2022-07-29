@@ -2,6 +2,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { GoogleMap, Marker } from '@capacitor/google-maps';
 import { ModalController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { IonModal } from '@ionic/angular';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -10,7 +11,7 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./trip-details.page.scss'],
 })
 export class TripDetailsPage{
-
+  @ViewChild(IonModal) modal: IonModal;
   @ViewChild('map')mapRef: ElementRef;
   map: GoogleMap;
 

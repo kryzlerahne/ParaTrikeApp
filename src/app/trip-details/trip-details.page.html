@@ -51,8 +51,45 @@
         <h2> <pre class="detail">     192m              5 mins         ₱40.00</pre></h2>
       </div>
       <div id="continueDiv">
-        <ion-button id="continueBtn" (click)="continue()">Continue <ion-icon name="checkmark-done"></ion-icon></ion-button>
+        <ion-button id="continueButton">Continue <ion-icon name="checkmark-done"></ion-icon></ion-button>
       </div>
+
+      <ion-modal id="successModal" #modal trigger="continueButton">
+          <ng-template>
+            <div class="wrapper">
+              <span class="close" (click)="modal.dismiss()">&times;</span>
+              <div id="container">
+                <div id="text">
+                  <h1 id="heading">Booking Succesful!</h1>
+                  <h3 id="tricInfo">Tricycle Number: 6398 BX</h3>
+                </div>
+              </div>
+
+              <div class="bookingDetails">
+                <ion-label>
+                  <div id="totalDiv">
+                    <h1 id="totalTxt"> PHP </h1>
+                  </div>
+                  <div id="priceDiv">
+                    <h1 id="totalPrice"> 50.00 </h1>
+                  </div>
+                  <h3> <pre id="detail1">  Base Fare                                    ₱10.00 </pre> </h3>
+                  <h3> <pre id="detail2">  Booking Fee                              ₱10.00 </pre> </h3>
+                  <h3> <pre id="detail3">  + Extra Passengers (3)            ₱30.00 </pre> </h3>
+
+                  <div class="hr2"></div>
+                  <h3 id="note"> Additonal waiting charges may apply to your trip, if the driver has waited more than 3 minutes.
+                  ₱5.00 per minute passed.  </h3>
+                </ion-label>
+              </div>
+
+              <center>
+                <ion-button id="proceedBtn" (click)="modal.dismiss()">Proceed to Payment <ion-icon id="moneyIcon" name="cash-outline"></ion-icon></ion-button>
+              </center>
+            </div>
+          </ng-template>
+      </ion-modal>
+
       <div id="closeDiv">
         <ion-button id="cancelBtn" (click)="cancel()">Cancel <ion-icon name="close"></ion-icon></ion-button>
       </div>
