@@ -1,0 +1,119 @@
+ion-content{
+  --background: url('../../assets/paymentBg.png') no-repeat center center/cover;
+}
+
+ion-header{
+  --background: transparent;
+}
+
+ion-title{
+  left:30px;
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.05em;
+  padding-left: 20px;
+
+}
+
+#back{
+  margin-right: 15px !important;
+  color: white !important;
+  width: 25px !important;
+  height: 25px !important;
+  vertical-align: middle!important;
+}
+
+.card{
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+  height: 66px;
+  margin-bottom: 13px;
+}
+
+.card2{
+  background-color: white;
+  border-radius: 10px;
+  height: 63px;
+  margin-bottom: 13px;
+}
+
+.paymentName{
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+}
+
+.cashName{
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-top: 13px;
+  height: 43px;
+}
+
+.debitName{
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-top: 13px;
+  height: 43px;
+}
+
+
+ion-icon{
+  padding-right: 15px;
+  vertical-align: middle;
+}
+
+#cash{
+  margin-bottom: 10px;
+}
+
+
+.illustration{
+  width: 250px;
+  margin-top: 35px;
+}
+
+#proceedBtn{
+  --border-radius: 24px;
+  --ion-font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: none;
+  width: 225px;
+  height: 37px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 14px;
+  --background: #0CBC8B;
+  margin-top: 50px;
+}
+
+#moneyIcon{
+  width: 30px !important;
+  height: 30px !important;
+  padding-left: 7px !important;
+  color: white !important;
+}
+
+#note{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 14px;
+  color: #545454;
+  margin-top: 20px;
+  text-align: center;
+  width: 285px;
+}
+
+.radioBtn{
+  --color-checked: #FFBA4C;
+}

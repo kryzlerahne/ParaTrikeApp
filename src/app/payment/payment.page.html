@@ -1,0 +1,46 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon id="back" name="arrow-back-outline" (click)="back()"></ion-icon>
+      Payment Options </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <center>
+  <ion-img src="../../assets/paymentIcon.png" alt="icon" class="illustration"></ion-img>
+  </center>
+
+  <ion-radio-group>
+        <ion-card class="card">
+           <ion-item color="none" lines="none">
+             <ion-icon name="wallet-outline"></ion-icon>
+             <ion-label class="paymentName">
+               <h3 class="paymentName">Wallet Balance</h3>
+               <h3>₱ 1,000.00</h3>
+             </ion-label>
+             <ion-radio class="radioBtn" slot="end" value="wallet"></ion-radio>
+           </ion-item>
+        </ion-card>
+        <ion-card  class="card2">
+           <ion-item color="none" lines="none">
+             <ion-icon name="cash-outline"></ion-icon>
+             <ion-label class="cashName">Cash</ion-label>
+             <ion-radio class="radioBtn"  slot="end"  value="cash"></ion-radio>
+           </ion-item>
+        </ion-card>
+        <ion-card  class="card2">
+           <ion-item color="none" lines="none">
+             <ion-icon name="card-outline"></ion-icon>
+             <ion-label class="debitName">Debit Card</ion-label>
+             <ion-radio class="radioBtn" slot="end" value="debit"></ion-radio>
+           </ion-item>
+        </ion-card>
+         </ion-radio-group>
+
+         <center>
+           <ion-label> <h3 id="note"> Additonal waiting charges may apply to your trip, if the driver has waited more than 3 minutes.
+           ₱5.00 will be charged per minute passed.  </h3> </ion-label>
+           <ion-button id="proceedBtn" (click)="pay()"> Pay Now <ion-icon id="moneyIcon" name="cash-outline"></ion-icon></ion-button>
+         </center>
+</ion-content>
