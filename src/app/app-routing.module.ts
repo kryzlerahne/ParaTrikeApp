@@ -36,10 +36,6 @@ const routes: Routes = [
     loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
   },
   {
-    path: 'modal',
-    loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
-  },
-  {
     path: 'confirmation',
     loadChildren: () => import('./confirmation/confirmation.module').then( m => m.ConfirmationPageModule)
   },
