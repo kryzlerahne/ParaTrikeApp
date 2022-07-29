@@ -21,8 +21,9 @@ export class TripDetailsPage{
     this.createMap();
   }
 
-  continue() {
-
+  payment() {
+    this.router.navigate(['/payment']);
+    this.modal.dismiss();
   }
 
   cancel() {
