@@ -1,0 +1,44 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon id="back" name="arrow-back-outline" (click)="back()"></ion-icon>
+      Trip Invoice </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <center>
+      <ion-img src="../../assets/receipt.png" alt="receipt" id="receipt"></ion-img>
+      <ion-button id="doneBtn" (click)="done()"> Done &emsp; <ion-icon name="checkmark-outline"></ion-icon> </ion-button>
+
+      <div class="textArea">
+        <h3 id="summaryTxt"> Summary Details</h3>
+        <h3 id="priceTxt"> PHP 50.00 </h3>
+        <h3 id="dateTxt"> July 30, 2022 </h3>
+
+        <div id="locLine">
+          <img src = "./assets/locationLine2.png" id="line">
+          <div class="hr"></div>
+        </div>
+        <div id="location">
+          <h2 class="locationTxt"> 7-Eleven, Bolbok, Batangas </h2>
+        </div>
+        <div id="destination">
+          <h2 class="destinationTxt"> Sta. Rita de Cascia Parish Church </h2>
+        </div>
+
+        <div id="leftTxt">
+          <h4> Booking ID <br> Tricycle Number <br> Assigned Driver <br> Time of Arrival <br> Total Distance <br> Waiting Time <br> Total Fare <br> </h4>
+        </div>
+
+        <div id="rightTxt">
+          <h5> TD8423 <br> 6398 BX <br> Karl Pangilinan <br> 4:13 PM <br> 192m <br> 5 mins <br> Php 50.00 </h5>
+        </div>
+      </div>
+    </center>
+  </div>
+
+  <h3 id="note"><i> You can screenshot this page for reference upon your driver's arrival. </i></h3>
+
+</ion-content>

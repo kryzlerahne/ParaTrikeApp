@@ -1,0 +1,167 @@
+ion-content{
+  --background: url('../../assets/invoiceBg.png') no-repeat center center/cover;
+}
+
+ion-header{
+  --background: transparent;
+}
+
+ion-title{
+  left:30px;
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.05em;
+  padding-left: 20px;
+}
+
+#back{
+  margin-right: 15px !important;
+  color: white !important;
+  width: 25px !important;
+  height: 25px !important;
+  vertical-align: middle!important;
+}
+
+#receipt{
+  margin-top: 80px;
+}
+
+#doneBtn{
+  --border-radius: 24px;
+  --ion-font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: none;
+  width: 200px;
+  height: 37px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 14px;
+  --background: #0CBC8B;
+  margin-top: 70px;
+}
+
+.textArea{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.container{
+  position: relative;
+  text-align: center;
+}
+
+#summaryTxt{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  color: white;
+  padding-left: 25px;
+}
+
+#priceTxt{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: 0.01em;
+  color: #212121;
+  padding-left: 30px;
+}
+
+#dateTxt{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #212121;
+  margin-top: -9px;
+  padding-left: 30px;
+}
+
+#line{
+  margin-left: 34px;
+  margin-top: 20px;
+}
+
+#location, #locLine{
+  position: absolute;
+}
+
+#destination{
+  margin-top: 55px;
+}
+
+.hr{
+  margin-top: -35px;
+  margin-left: 60px;
+  position: absolute;
+  width: 220px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.8);
+  color: white;
+}
+
+.locationTxt, .destinationTxt{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  color:white;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+.locationTxt{
+  margin-left: 45px;
+  margin-top: 20px;
+  width: 240px;
+}
+
+.destinationTxt{
+  margin-top: 72px;
+  margin-left: 55px;
+}
+
+h4, h5{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  color:white;
+  line-height: 30px;
+  font-size: 15px;
+  //padding-top: 10px;
+}
+
+h4{
+  text-align: left;
+  padding-left: 30px;
+}
+
+h5{
+  text-align: right;
+  margin-left: 96px;
+  color: #212121;
+  font-weight: 500;
+  width: 200px;
+}
+
+#leftTxt, #rightTxt{
+  position: absolute;
+}
+
+#note{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(33, 33, 33, 0.5);
+  text-align: center;
+  width: 320px;
+  margin-top: -98px;
+  padding-left: 40px;
+}
