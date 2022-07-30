@@ -26,19 +26,9 @@ export class AppComponent {
      icon: 'refresh'
    },
    {
-     title: 'Scheduled',
-     url: '',
+     title: 'Active Bookings',
+     url: '/active',
      icon: 'alarm'
-   },
-   {
-     title: 'Notifications',
-     url: '',
-     icon: 'notifications'
-   },
-   {
-     title: 'Help Center',
-     url: '',
-     icon: 'help-circle'
    },
    {
      title: 'Logout',
