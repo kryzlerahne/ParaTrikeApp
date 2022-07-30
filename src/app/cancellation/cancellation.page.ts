@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cancellation',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CancellationPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  close() {
+      this.router.navigate(['/map']);
+  }
 
   ngOnInit() {
   }

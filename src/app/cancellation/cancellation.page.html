@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>cancellation</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
 
-<ion-content>
+<div class="vertical-center">
+  <div class="center">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-label> Your booking was cancelled! </ion-label>
+          <ion-img src= "./assets/cancelledIllustration.png" alt="logo" align="right" id="tick"></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-text> The amount of ₱30.00 has already been deducted to your account as a compensation fee to our dear tricycle drivers. We hope no more cancellations the next time you book a ride. Thank you! </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <center>
+      <ion-button id="closeBtn" (click)="close()">Close</ion-button>
+    </center>
+
+  </div>
+</div>
+
+  <p> You will be redirected to the home page. </p>
+
 
 </ion-content>

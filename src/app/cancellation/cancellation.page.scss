@@ -1,0 +1,77 @@
+ion-content {
+    --background: url('../../assets/Confirmationbg.png') no-repeat center center/cover;
+  }
+
+ion-label {
+  font-size: 1.3rem;
+  color:#212121;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  display: flex;
+  text-align: center;
+  letter-spacing: -1.4px;
+  margin-top: 90px;
+}
+
+ion-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #212121;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  margin-top: -2px;
+}
+
+ion-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+ion-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 10px;
+  letter-spacing: -0.04em;
+  color: rgba(39, 39, 39, 0.6);
+  margin-top: 40px;
+}
+
+#tick {
+  position: absolute;
+  margin-top: -160px;
+}
+
+.vertical-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+#closeBtn{
+  --border-radius: 24px;
+  text-transform: none;
+  width: 150px;
+  height: 37px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin-top: 10px;
+  --background: #C5331E;
+}
