@@ -15,7 +15,7 @@ export class PaymentPage implements OnInit {
   }
 
   pay(){
-    this.router.navigate(['/confirmation']);
+    this.router.navigate(['/summary']);
   }
 
   ngOnInit() {
