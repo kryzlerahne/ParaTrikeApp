@@ -1,19 +1,27 @@
 ion-content {
-    --background: url('../../assets/confirmationbg.png') no-repeat center center/cover;
+    --background: url('../../assets/Confirmationbg.png') no-repeat center center/cover;
   }
 
 ion-label {
   font-size: 1.5rem;
   color:#212121;
-  font-weight: bold;
-  font-family: Montserrat;
+  font-weight: 700;
+  font-family: 'Montserrat';
   display: flex;
   text-align: center;
   letter-spacing: -1.4px;
+  margin-top: -70px;
 }
 
 ion-text {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #212121;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  margin-top: -42px;
 }
 
 ion-img {
@@ -30,16 +38,24 @@ ion-col {
 
 p {
   text-align: center;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 10px;
+  letter-spacing: -0.04em;
+  color: rgba(39, 39, 39, 0.6);
+  margin-top: -45px;
 }
 
 #logo {
-  width: 170px;
-  height: 175px;
+  width: 194px;
+  height: 199px;
+  margin-top: -90px;
 }
 
 #tick {
-  padding-left: 5px;
+  padding-left: 8px;
 }
 
 .vertical-center{
@@ -50,29 +66,98 @@ p {
 }
 
 .alignBttn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 10%;
-  width:100%;
+  text-align: center;
 }
 
-.gBttn, .rBttn {
+.gBttn, #rBttn {
   --border-radius: 24px;
-  --ion-font-family: 'Montserrat';
-  font-weight: 400;
   text-transform: none;
-  width: 130px;
+  width: 202px;
   height: 37px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  font-size: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.01em;
 }
 
 .gBttn{
-    --background: #0CBC8B;
+  margin-top: -200px;
+  --background: #0CBC8B;
 }
 
-.rBttn{
-    --background: #C5331E;
+#rBttn{
+  margin-top: -140px;
+  --background: #C5331E;
+}
+
+//modal
+ion-modal#warningmodal {
+ --width:300px;
+  --height: 190px;
+  --border-radius: 15px;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  --overflow-y:scroll;
+  --background-color: transparent;
+}
+
+ion-modal#warningmodal ion-icon {
+  color: white;
+  width: 22px;
+  height: 22px;
+}
+
+#warningHeading{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: white;
+}
+
+#warningContainer{
+  background-color:#C5331E;
+  border-radius: 15px 15px 0 0;
+  width: 300px;
+  height: 70px;
+  margin-top: -20px;
+  padding-top: 12px;
+}
+
+#warningTxt{
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #212121;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+#yesBtn, #noBtn{
+  --border-radius: 24px;
+  text-transform: none;
+  width: 100px;
+  height: 37px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin-top: 9px;
+}
+
+#yesBtn{
+  --background: #0CBC8B;
+}
+
+#noBtn{
+  --background: #C5331E;
 }

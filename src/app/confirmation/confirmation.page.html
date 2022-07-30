@@ -12,7 +12,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-text> Please wait patiently. Your driver is on the way.. </ion-text>
+          <ion-text> Please wait patiently. Your driver is on the way... </ion-text>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -21,9 +21,30 @@
 </div>
 
   <div class="alignBttn">
-    <ion-button class="gBttn" color="success">Booking Completed</ion-button><br>
-    <ion-button class="rBttn" color="danger">Cancel Booking</ion-button>
+    <ion-button class="gBttn" (click)="complete()">Booking Completed <ion-icon name="checkmark-outline"></ion-icon></ion-button><br>
+    <ion-button id="rBttn">Cancel Booking<ion-icon name="close-outline"></ion-icon></ion-button>
   </div>
-  <p><i> Note: With Cancellation Fee </i></p>
+
+  <ion-modal id="warningmodal" #modal trigger="rBttn">
+      <ng-template>
+        <div class="wrapper">
+          <div id="warningContainer">
+            <h1 id="warningHeading">Warning <ion-icon name="warning-outline"></ion-icon></h1>
+          </div>
+
+          <div>
+            <h3 id="warningTxt"> A cancellation fee of P30.00 will be deducted automatically upon this action. Are you sure you want to cancel?</h3>
+          </div>
+          <center>
+            <ion-button id="yesBtn" (click)="cancel()">Yes</ion-button>
+            <ion-button id="noBtn" (click)="modal.dismiss()">No</ion-button>
+          </center>
+        </div>
+      </ng-template>
+  </ion-modal>
+
+
+  <p>Note: With Cancellation Fee </p>
+
 
 </ion-content>
