@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-wallet',
@@ -23,7 +25,31 @@ export class WalletPage implements OnInit {
     {id: 5, action: 'Send to Jolly Canola', refCode: '0000053', amount: -1100,  date: '07/24/22', time: '5:30AM'},
 
   ];
-  constructor() { }
+
+  private loading;
+
+  constructor(private router: Router, private loadingCtrl: LoadingController) { }
+
+  recharge(){
+
+    this.loadingCtrl.create({
+      message:'Connecting to third party mobile wallet apps...',
+      spinner: 'circles',
+      cssClass: 'custom-loading'
+    }).then((overlay) => {
+      this.loading = overlay;
+      this.loading.present();
+    });
+
+    setTimeout(() => {
+
+      this.loading.dismiss();
+      this.router.navigate(['/wallet']);
+
+    }, 4000);
+
+  }
+
 
   ngOnInit() {
   }
