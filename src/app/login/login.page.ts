@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,9 @@ export class LoginPage implements OnInit {
   form: FormGroup
   type: boolean = true;
 
-  constructor(private router: Router) { }
+  private loading;
+
+  constructor(private router: Router, private loadingCtrl: LoadingController) { }
 
   signIn() {
     this.router.navigate(['/login']);
@@ -23,11 +26,28 @@ export class LoginPage implements OnInit {
   }
 
   login(){
-    if(!this.form.valid){
-      this.form.markAllAsTouched();
-      return;
-    }
-    this.router.navigate(['/map']);
+
+    this.loadingCtrl.create({
+      message:'Authenticating...',
+      spinner: 'circles',
+      cssClass: 'custom-loading'
+    }).then((overlay) => {
+      this.loading = overlay;
+      this.loading.present();
+    });
+
+    setTimeout(() => {
+
+      this.loading.dismiss();
+
+      if(!this.form.valid){
+        this.form.markAllAsTouched();
+        return;
+      }
+      this.router.navigate(['/map']);
+
+    }, 4000);
+
   }
 
   forgotPassword(){
