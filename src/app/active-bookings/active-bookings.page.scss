@@ -1,0 +1,232 @@
+ion-content{
+    --background: url('../../assets/historybg.png') no-repeat center center/cover;
+}
+
+ion-content{
+font-family: 'Montserrat';
+}
+
+ion-title{
+  font-family: 'Montserrat';
+  color:white;
+}
+
+#logo {
+  width: 169px;
+  height: 167px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-bottom:0px;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+ion-menu-button{
+  color:white;
+}
+
+ion-card{
+  border-radius: 10px;
+  background-color: white;
+  width: 320px;
+  height: 200px;
+  display:block;
+  margin: 0 auto;
+  margin-top: -25px;
+  //box-shadow: -1px 11px 13px -6px rgb(87, 86, 86);
+}
+
+#line{
+  margin-left: 28px;
+  margin-top: 10px;
+}
+
+#location, #locLine{
+  position: absolute;
+}
+
+#destination{
+  margin-top: 45px;
+}
+
+.hr{
+  margin-top: -34px;
+  margin-left: 60px;
+  position: absolute;
+  width: 220px;
+  border-bottom: 1px solid rgb(208, 208, 208, 0.8);
+  color: black;
+}
+
+.locationTxt, .destinationTxt, h5, h6{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  color:black;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+.locationTxt{
+  margin-left: 59px;
+  margin-top: 13px;
+  width: 240px;
+}
+
+.destinationTxt{
+  margin-top: 52px;
+  margin-left: 56px;
+}
+
+h5{
+  display: inline-block;
+}
+
+#bookId{
+  font-weight: 500;
+  color: #FFBA4C;
+}
+
+#bookTxt{
+  margin-left: 14px;
+  padding-top: 1px;
+}
+
+h6{
+  display: inline-block;
+  margin-left: 20px;
+  background-color: #FFBA4C;
+  height: 30px;
+  width: 132px;
+  padding-left: 7px;
+  padding-top: 8px;
+}
+
+#dateTimes{
+  width: 134px;
+}
+
+.statusBtn{
+  color: #FFBA4C;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: none;
+  width: 250px;
+  height: 30px;
+  letter-spacing: -0.4px;
+  border: 3px solid #FFBA4C;
+  --background: transparent;
+  border-radius: 25px;
+  --ion-font-family: 'DM Sans Regular';
+  --box-shadow:none;
+  margin-left: 33px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+#done1Btn, #done2Btn, #done3Btn{
+  color: #0CBC8B;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: none;
+  width: 120px;
+  height: 30px;
+  letter-spacing: -0.4px;
+  border: 3px solid #0CBC8B;
+  --background: transparent;
+  border-radius: 25px;
+  --ion-font-family: 'DM Sans Regular';
+  --box-shadow:none;
+  margin-left: 10px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+//modal
+ion-modal#warningmodal {
+ --width:300px;
+  --height: 190px;
+  --border-radius: 15px;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  --overflow-y:scroll;
+  --background-color: transparent;
+}
+
+ion-modal#completemodal {
+ --width:300px;
+  --height: 170px;
+  --border-radius: 15px;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  --overflow-y:scroll;
+  --background-color: transparent;
+}
+
+ion-modal#warningmodal ion-icon {
+  color: white;
+  width: 22px;
+  height: 22px;
+}
+
+#warningHeading, #completeHeading{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: white;
+}
+
+#warningContainer{
+  background-color:#C5331E;
+  border-radius: 15px 15px 0 0;
+  width: 300px;
+  height: 70px;
+  margin-top: -20px;
+  padding-top: 12px;
+}
+
+#completeContainer{
+  background-color:#0CBC8B;
+  border-radius: 15px 15px 0 0;
+  width: 300px;
+  height: 70px;
+  margin-top: -20px;
+  padding-top: 12px;
+}
+
+#warningTxt{
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #212121;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+#yesBtn, #noBtn{
+  --border-radius: 24px;
+  text-transform: none;
+  width: 100px;
+  height: 37px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin-top: 9px;
+}
+
+#yesBtn{
+  --background: #0CBC8B;
+}
+
+#noBtn{
+  --background: #C5331E;
+}
