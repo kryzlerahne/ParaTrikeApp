@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import {FormControl, FormGroup} from '@angular/forms';
 import { Router } from '@angular/router';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-registration-account',
@@ -12,6 +13,8 @@ export class RegistrationAccountPage implements OnInit {
 
   type: boolean = true;
   type2: boolean = true;
+
+  private loading;
 
   get username() {
     return this.accountForm.get('username');
@@ -45,17 +48,34 @@ export class RegistrationAccountPage implements OnInit {
     retypePw : ['', [Validators.required, Validators.minLength(8)]]
   });
 
-  constructor(private formBuilder: FormBuilder, private router: Router) { }
+  constructor(private formBuilder: FormBuilder, private router: Router, private loadingCtrl: LoadingController) { }
 
   ngOnInit() {
   }
 
   public submit() {
-    if(!this.accountForm.valid){
-      this.accountForm.markAllAsTouched();
-      return;
-    }
-    this.router.navigate(['/map']);
+
+    this.loadingCtrl.create({
+      message:'Processing your account...',
+      spinner: 'circles',
+      cssClass: 'custom-loading'
+    }).then((overlay) => {
+      this.loading = overlay;
+      this.loading.present();
+    });
+
+    setTimeout(() => {
+
+      this.loading.dismiss();
+
+      if(!this.accountForm.valid){
+        this.accountForm.markAllAsTouched();
+        return;
+      }
+      this.router.navigate(['/map']);
+
+    }, 4000);
+
   }
 
   changeEye() {
