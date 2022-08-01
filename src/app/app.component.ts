@@ -27,7 +27,7 @@ export class AppComponent {
    },
    {
      title: 'Active Bookings',
-     url: '/active',
+     url: '/active-bookings',
      icon: 'alarm'
    },
    {

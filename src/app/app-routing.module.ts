@@ -63,6 +63,10 @@ const routes: Routes = [
     path: 'cancellation',
     loadChildren: () => import('./cancellation/cancellation.module').then( m => m.CancellationPageModule)
   },
+  {
+    path: 'active-bookings',
+    loadChildren: () => import('./active-bookings/active-bookings.module').then( m => m.ActiveBookingsPageModule)
+  },
 ];
 
 @NgModule({
