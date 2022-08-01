@@ -28,3 +28,11 @@
 ion-toolbar {
   --background: #FFBA4C;
 }
+
+ion-loading.custom-loading {
+  --background: #FFF0D8;
+  --font-style: 'Montserrat';
+  font-weight: 500;
+  --spinner-color: #FFBA4C;
+  color: #212121;
+}
