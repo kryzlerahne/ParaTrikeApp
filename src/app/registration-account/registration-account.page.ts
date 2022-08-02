@@ -72,7 +72,7 @@ export class RegistrationAccountPage implements OnInit {
         this.accountForm.markAllAsTouched();
         return;
       }
-      this.router.navigate(['/map']);
+      this.router.navigate(['/login']);
 
     }, 4000);
 
