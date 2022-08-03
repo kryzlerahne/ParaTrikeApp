@@ -23,6 +23,7 @@ export class WalletPage implements OnInit {
     {id: 3, action: 'Send to Vienna Sausage', refCode: '0000014', amount: -1500,  date: '07/23/22', time: '5:30AM'},
     {id: 4, action: 'Received from 711 Cliqq', refCode: '0000023', amount: 15000,  date: '07/23/22', time: '12:35NN'},
     {id: 5, action: 'Send to Jolly Canola', refCode: '0000053', amount: -1100,  date: '07/24/22', time: '5:30AM'},
+    {id: 6, action: 'Send to Mister Clean', refCode: '0000062', amount: -500,  date: '07/25/22', time: '8:30AM'},
 
   ];
 
