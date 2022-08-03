@@ -7,7 +7,7 @@
 
 <p align=justify>  Considering this, commuting is very important not just for the means of transportation but also for the essential role it plays in the daily activities of the society due to the large percentage of the working population that goes to work daily, as this is less expensive and economical seeing as how people nowadays struggle because of the effect of the pandemic on their lives. The use of tricycles as the primary means of public transportation in large neighborhoods such as subdivisions and villages has gone mainstream within the population living within that area because of the long distance of most of the people to the terminal and their lack of contact. According to the drivers, they are still attempting to re-establish their regular passengers and pre-pandemic routine. Most of them also said that they were unable to reach as many passengers as they would have wished in order to earn more money, especially since their expenses are continuously increasing and because vehicles and commuters are too far off and having trouble connecting with one another. </p>
 
-<p align=justify> Most commuters struggle as well, especially during rush hours when there is a low demand for tricycles or during off-peak hours when they have to walk far enough to reach the main terminal of the village just to catch a ride towards the main city. </p>
+<p align=justify> Most commuters struggle as well, especially during rush hours when there is a low demand for tricycles or during off-peak hours when they have to walk far enough to reach the main terminal of the village just to catch a ride towards the main city. Notably in places like subdivisions, complexes, etc. where the tricycle is the only mode of transportation. </p>
 
 <h1 align="center"> 
 
